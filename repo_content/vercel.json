@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "api/trpc/[trpc].ts": {
+      "runtime": "@vercel/node@3.2.0",
+      "maxDuration": 30
+    }
+  },
+  "rewrites": [
+    { "source": "/api/trpc/:path*", "destination": "/api/trpc/[trpc]" }
+  ]
+}
